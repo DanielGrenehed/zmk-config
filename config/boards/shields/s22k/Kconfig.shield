@@ -3,4 +3,4 @@ config SHIELD_S22K_LEFT
     def_bool $(shields_list_contains,s22k_left)
 
 config SHIELD_S22K_RIGHT
-    def_bool $(shields_list_contains,s22_right)
+    def_bool $(shields_list_contains,s22k_right)
