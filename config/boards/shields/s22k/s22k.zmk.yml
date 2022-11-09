@@ -1,14 +1,11 @@
 file_format: "1"
 id: s22k
-name: S22k
+name: S22K
 type: shield
 url: https://github.com/DanielGrenehed/S22K
 requires: [pro_micro]
 features:
   - keys
-outputs:
-  - usb
-  - ble
 siblings:
   - s22k_left
   - s22k_right
