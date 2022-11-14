@@ -1,0 +1,8 @@
+file_format: "1"
+id: hs22k
+name: HS22K
+type: shield
+url: https://github.com/DanielGrenehed/HS22K
+requires: [pro_micro]
+features:
+  - keys
