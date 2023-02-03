@@ -117,7 +117,7 @@
 			label = "Strings";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp APOS>, <&kp LS(N2)>;
+			bindings = <&kp BSLH>, <&kp LS(N2)>;
 		};
 		tdSlashes: slashes { /* / \ */
 			compatible = "zmk,behavior-tap-dance";
