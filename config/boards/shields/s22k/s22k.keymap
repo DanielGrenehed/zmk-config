@@ -116,7 +116,7 @@
 			label = "Strings";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp BSLH>, <&kp LS(N2)>;
+			bindings = <&kp APOS>, <&kp LS(N2)>;
 		};
 		tdSlashes: slashes { /* / \ */
 			compatible = "zmk,behavior-tap-dance";
@@ -135,7 +135,6 @@
     };
 
 	keymap {
-		compatible = "zmk,keymap";
 
 		default_layer {
 			// --------------------------------------------------------
@@ -415,6 +414,7 @@
 		};
 		combo_butt_3l3 {
 			timeout-ms = <30>;
+			key-positions = <2 10>;
 			key-positions = <2 10>;
 			layers = <3>;
 			bindings = <&kp RC(RA(F))>;
