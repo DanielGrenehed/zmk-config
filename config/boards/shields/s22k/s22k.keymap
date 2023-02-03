@@ -140,25 +140,25 @@
 
 		default_layer {
 			// --------------------------------------------------------
-			// | A | W | F | P |				 	  | L | U | Y | O |
-			// | D | R | S | T |				 	  | N | E | I | . |
+			// | A | W | F | P |				 	  | L | U | Y | . |
+			// | D | R | S | T |				 	  | N | E | I | O |
 			// | ALT | SHIFT | WIN/CTRl |           | SPACE | MO | MO |
 			// --------------------------------------------------------
 			bindings = <
-				&kp A &kp W &kp F &kp P					&kp L &kp U &kp Y &kp O
-				&kp D &kp R &kp S &kp T 				&kp N &kp E &kp I &kp DOT
+				&kp A &kp W &kp F &kp P					&kp L &kp U &kp Y &kp DOT
+				&kp D &kp R &kp S &kp T 				&kp N &kp E &kp I &kp O  
 				 &kp RALT &kp LSHIFT &tdCMDCTRL		&kp SPACE &mo 1 &mo 2
 			>;
 		};
 
 		mod1_layer {
 			// ---------------------------------------------------
-			// | @ | '/" | <> | () |			| [] | {} | /\ | | |
+			// | @ | '/" | <> | | |			| Å | O | Q | , |
 			// | Å | X | Ä | G |			| J | ENTER | Ö | , |
 			// | ALT | SHIFT | WIN |          | SPACE | MO | MO |
 			// ---------------------------------------------------
 			bindings = <
-				&kp RA(N2) &tdStrings &td4 &td1		&td2 &td3 &tdSlashes &kp RA(N7)
+				&kp RA(N2) &tdStrings &td4 &kp RA(N7) 		&kp LBKT &kp O &kp Q &kp COMMA
 				&kp LBKT &kp X &kp APOS &kp G 		&kp J &kp RET &kp SEMI &kp COMMA
 				     &trans &trans &trans			&trans &trans &trans 
 			>;
@@ -179,12 +179,12 @@
 		
 		mod3_layer {
 			// ---------------------------------------------------
-			// | Delete | Backspace | UP | apps |	 | F10 | F11 | F12 | F2 |
+			// | sl4 | Backspace | UP | DELETE |	 | F10 | F11 | F12 | F2 |
 			// | sl4 | RIGHT | DOWN | LEFT |	 		 | F5 | ESC | F1 | F4 |
 			// | ALT | SHIFT | WIN |                    | SPACE | MO | MO |
 			// ---------------------------------------------------
 			bindings = <
-				&kp DEL &kp BSPC &kp UP &kp K_APP	&kp F10 &kp F11 &kp F12 &kp F2
+				&sl 4 &kp BSPC &kp UP &kp DEL	&kp F10 &kp F11 &kp F12 &kp F2
 				&sl 4 &kp LEFT &kp DOWN &kp RIGHT 		&kp F5 &kp ESC &kp F1 &kp F4
 				 &trans &trans &trans			    	&trans &trans &trans
 			>;
@@ -192,12 +192,12 @@
 
 		mod4_layer {
 			// ---------------------------------------------------
-			// | 0 | bt0 | bt1 | bt2 |				| Brightness up | play/pause | volume up | Lock |
+			// | out_toggle | bt0 | bt1 | bt2 |				| Brightness up | play/pause | volume up | Lock |
 			// | out_toggle | bt3 | bt4 | bt5 |		| Brightness down | Next/Prev | volume down | 0 |
 			// | ALT | SHIFT | WIN |                | SPACE | MO | MO |
 			// ---------------------------------------------------
 			bindings = <
-				&kp N0 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2		&kp C_BRI_UP &kp C_PP &kp C_VOL_UP &kp K_PWR
+				&out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2		&kp C_BRI_UP &kp C_PP &kp C_VOL_UP &kp K_PWR
 				&out OUT_TOG &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 	&kp C_BRI_DN &tdNextPrev &kp C_VOL_DN &kp N0
 				 &trans &trans &trans							    	&trans &trans &trans
 			>;
@@ -283,7 +283,7 @@
 
 			| upper row
 			-----------------------------------------
-			| # | * | TAB | _ |		| ? | & | ! | % |
+			| # | Z | TAB | D |		| ? | & | ! | % |
 			-----------------------------------------
 			| lower row
 		*/
@@ -297,7 +297,7 @@
 			timeout-ms = <30>;
 			key-positions = <1 9>;
 			layers = <1>;
-			bindings = <&kp LS(BSLH)>;
+			bindings = <&kp Z>;
 		};
 		combo_butt_3l1 {
 			timeout-ms = <30>;
@@ -309,7 +309,7 @@
 			timeout-ms = <30>;
 			key-positions = <3 11>;
 			layers = <1>;
-			bindings = <&kp LS(FSLH)>;
+			bindings = <&kp D>;
 		};
 
 		combo_butt_5l1 {
@@ -341,7 +341,7 @@
 			Layer 2 In-between row
 
 			-----------------------------------------
-			| ! | " | # | € |		| 4 | 5 | 6 | % |
+			| ! | " | # | * |		| 4 | 5 | 6 | % |
 			-----------------------------------------
 
 		*/
@@ -367,7 +367,7 @@
 			timeout-ms = <30>; 
 			key-positions = <3 11>;
 			layers = <2>;
-			bindings = <&kp DLLR>;
+			bindings = <&kpu LS(BSLH)>;
 		};
 		combo_butt_5l2 {
 			timeout-ms = <30>;
