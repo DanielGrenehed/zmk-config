@@ -140,12 +140,12 @@
 
 		default_layer {
 			// --------------------------------------------------------
-			// | A | W | F | P |				 	  | L | U | Y | . |
-			// | D | R | S | T |				 	  | N | E | I | O |
+			// | A | W | F | D |				 	  | L | U | Y | . |
+			// |   | R | S | T |				 	  | N | E | I |   |
 			// | ALT | SHIFT | WIN/CTRl |           | SPACE | MO | MO |
 			// --------------------------------------------------------
 			bindings = <
-				&kp A &kp W &kp F &kp P					&kp L &kp U &kp Y &kp DOT
+				&kp A &kp W &kp F &kp D					&kp L &kp U &kp Y &kp DOT
 				&kp D &kp R &kp S &kp T 				&kp N &kp E &kp I &kp O  
 				 &kp RALT &kp LSHIFT &tdCMDCTRL		&kp SPACE &mo 1 &mo 2
 			>;
@@ -153,13 +153,13 @@
 
 		mod1_layer {
 			// ---------------------------------------------------
-			// | @ | '/" | <> | D |			| Å | O | Q | , |
-			// | Å | X | Ä | G |			| J | ENTER | Ö | , |
+			// | @ | '/" | <> | K |			| Å | Ä | Ö | , |
+			// |   | X | Q | V |			| J | ENTER | | |   |
 			// | ALT | SHIFT | WIN |          | SPACE | MO | MO |
 			// ---------------------------------------------------
 			bindings = <
-				&kp RA(N2) &tdStrings &td4 &kp D 		&kp LBKT &kp O &kp Q &kp COMMA
-				&kp LBKT &kp X &kp APOS &kp G 		&kp J &kp RET &kp SEMI &kp COMMA
+				&kp RA(N2) &tdStrings &td4 &kp K 		&kp LBKT &kp APOS &kp SEMI &kp COMMA
+				&kp LBKT &kp X &kp Q &kp V 		&kp J &kp RET &kp RA(N7) &kp COMMA
 				     &trans &trans &trans			&trans &trans &trans 
 			>;
 		};
@@ -225,7 +225,7 @@
 
 			| upper row
 			-----------------------------------------
-			| Z | V | C | B |		| M | H | K | Q |
+			|   | P | C | G |		| M | H | O |   |
 			-----------------------------------------
 			| lower row
 			*/
@@ -239,7 +239,7 @@
 			timeout-ms = <30>;
 			key-positions = <1 9>;
 			layers = <0>;
-			bindings = <&kp V>;
+			bindings = <&kp P>;
 		};
 		combo_butt_3l0 {
 			timeout-ms = <30>;
@@ -247,12 +247,12 @@
 			layers = <0>;
 			bindings = <&kp C>;
 		};
-        combo_butt_4l0 {
-            timeout-ms = <30>;
-            key-positions = <3 11>;
+        	combo_butt_4l0 {
+            		timeout-ms = <30>;
+            		key-positions = <3 11>;
 			layers = <0>;
-            bindings = <&kp B>;
-        };
+            		bindings = <&kp G>;
+        	};
 		combo_butt_5l0 {
 			timeout-ms = <30>;
 			key-positions = <4 12>;
@@ -269,7 +269,7 @@
 			timeout-ms = <30>;
 			key-positions = <6 14>;
 			layers = <0>;
-			bindings = <&kp K>;
+			bindings = <&kp O>;
 		};
 		combo_butt_8l0 {
 			timeout-ms = <30>;
@@ -283,7 +283,7 @@
 
 			| upper row
 			-----------------------------------------
-			| # | Z | TAB | | |		| ? | & | ! | % |
+			|   | Z | TAB | B |		| ? | & | ! |   |
 			-----------------------------------------
 			| lower row
 		*/
@@ -309,7 +309,7 @@
 			timeout-ms = <30>;
 			key-positions = <3 11>;
 			layers = <1>;
-			bindings = <&kp RA(N7)>;
+			bindings = <&kp B>;
 		};
 
 		combo_butt_5l1 {
@@ -341,7 +341,7 @@
 			Layer 2 In-between row
 
 			-----------------------------------------
-			| ! | " | # | * |		| 4 | 5 | 6 | % |
+			|   | " | # | * |		| 4 | 5 | 6 |   |
 			-----------------------------------------
 
 		*/
