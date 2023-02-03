@@ -112,7 +112,8 @@
 			tapping-term-ms = <200>;
 			bindings = <&kp SPACE>, <&kp TAB>;
 		};
-		tdStrings: strings { /* ' " :		compatible = "zmk,behavior-tap-dance";
+		tdStrings: strings { /* ' " */		
+			compatible = "zmk,behavior-tap-dance";
 			label = "Strings";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
