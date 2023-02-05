@@ -25,9 +25,6 @@
     };
 
 	behaviors {
-		/*
-
-		*/
         tdCMDCTRL: td-cmd-ctrl {
             compatible = "zmk,behavior-tap-dance";
             label = "CMD-CTRL";
