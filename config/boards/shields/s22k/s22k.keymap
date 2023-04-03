@@ -33,7 +33,7 @@
             label = "CMD-CTRL";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LGUI>, <&kp LCTRL>;
+            bindings = <&kp LCTRL>, <&kp LGUI>;
         };
 		td1: td-bracket { /* ( ) */
 			compatible = "zmk,behavior-tap-dance";
@@ -341,7 +341,7 @@
 			Layer 2 In-between row
 
 			-----------------------------------------
-			|   | " | # | * |		| 4 | 5 | 6 |   |
+			|   | CAPS | # | * |		| 4 | 5 | 6 |   |
 			-----------------------------------------
 
 		*/
@@ -355,7 +355,7 @@
 			timeout-ms = <30>;
 			key-positions = <1 9>;
 			layers = <2>;
-			bindings = <&kp AT>;
+			bindings = <&kp CAPS>;
 		};
 		combo_butt_3l2 {
 			timeout-ms = <30>;
