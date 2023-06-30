@@ -16,6 +16,7 @@
 / {
 	macros {
 		bt_pro: set_bt_profile {
+			label = "UseBluetoothProfile";
 			compatible = "zmk,behavior-macro-one-param";
 			bindings
 				= <&macro_param_1to2>
