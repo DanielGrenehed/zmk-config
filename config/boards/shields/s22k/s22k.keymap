@@ -440,37 +440,37 @@
 			// 8 and 15 NC
 		*/
 		combo_up_left {
-			timeout-ms = <30>;
+			timeout-ms = <60>;
 			key-positions = <1 2 3>;
 			layers = <0>;
 			bindings = <&kp F14>;
 		};
 		combo_up_right {
-			timeout-ms = <30>;
+			timeout-ms = <60>;
 			key-positions = <4 5 6>;
 			layers = <0>;
 			bindings = <&kp F15>;
 		};
 		combo_home_left {
-			timeout-ms = <30>;
+			timeout-ms = <60>;
 			key-positions = <1 2 3 9 10 11>;
 			layers = <0>;
 			bindings = <&kp F18>;
 		};
 		combo_home_right {
-			timeout-ms = <30>;
+			timeout-ms = <60>;
 			key-positions = <4 5 6 12 13 14>;
 			layers = <0>;
 			bindings = <&kp F19>;
 		};
 		combo_down_left {
-			timeout-ms = <30>;
+			timeout-ms = <60>;
 			key-positions = <9 10 11>;
 			layers = <0>;
 			bindings = <&kp F16>;
 		};
 		combo_down_right {
-			timeout-ms = <30>;
+			timeout-ms = <60>;
 			key-positions = <12 13 14>;
 			layers = <0>;
 			bindings = <&kp F17>;
