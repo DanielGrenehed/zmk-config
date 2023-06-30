@@ -16,9 +16,7 @@
 / {
 	macros {
 		bt_pro: set_bt_profile {
-			label = "bluetooth_select_profile";
 			compatible = "zmk,behavior-macro-one-param";
-			#binding-cells = <0>;
 			bindings
 				= <&macro_param_1to2>
 				, <&bt BT_SEL 0>
