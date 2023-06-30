@@ -18,6 +18,7 @@
 		bt_pro: set_bt_profile {
 			label = "UseBluetoothProfile";
 			compatible = "zmk,behavior-macro-one-param";
+			#binding-cells = <1>;
 			bindings
 				= <&macro_param_1to2>
 				, <&bt BT_SEL 0>
