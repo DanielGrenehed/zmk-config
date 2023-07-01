@@ -118,7 +118,7 @@
 		layer_3 {
 			// --------------------------------------------------------------
 			// | sl4 | Backspace | UP | DELETE |	 | F10 | F11 | F12 | F2 |
-			// |  | RIGHT | DOWN | LEFT |	 | F5 | ESC | F1 |  |
+			// |  | RIGHT | DOWN | LEFT |	         | F5 | ESC | F1 |  |
 			// | ALT | SHIFT | WIN |                 | SPACE | MO | MO |
 			// --------------------------------------------------------------
 			bindings = <
@@ -299,46 +299,45 @@
 		/* 
 			Layer 3 In-between row
 
-			Magnet align thirds
-			-----------------------------------------------------------------
-			| | CTRL+ALT+E | CTRL+ALT+F | CTRL+ALT+T |		| CTRL+ALT+G | CTRL+ALT+C | WIN+SPACE | |
-			-----------------------------------------------------------------
+			--------------------------------------------------
+			| | F3 | F4 | F6 |		| F7 | F8 | F9 | |
+			--------------------------------------------------
 		*/
 		combo_btn_2l3 {
 			timeout-ms = <30>;
 			key-positions = <1 9>;
 			layers = <3>;
-			bindings = <&kp RC(RA(E))>;
+			bindings = <&kp F3>;
 		};
 		combo_btn_3l3 {
 			timeout-ms = <30>;
 			key-positions = <2 10>;
 			layers = <3>;
-			bindings = <&kp RC(RA(F))>;
+			bindings = <&kp F4>;
 		};
 		combo_btn_4l3 {
 			timeout-ms = <30>;
 			key-positions = <3 11>;
 			layers = <3>;
-			bindings = <&kp RC(RA(T))>;
+			bindings = <&kp F6>;
 		};
 		combo_btn_5l3 {
 			timeout-ms = <30>;
 			key-positions = <4 12>;
 			layers = <3>;
-			bindings = <&kp RC(RA(G))>;
+			bindings = <&kp F7>;
 		};
 		combo_btn_6l3 {
 			timeout-ms = <30>;
 			key-positions = <5 13>;
 			layers = <3>;
-			bindings = <&kp RC(RA(C))>;
+			bindings = <&kp F8>;
 		};
 		combo_btn_7l3 {
 			timeout-ms = <30>;
 			key-positions = <6 14>;
 			layers = <3>;
-			bindings = <&kp LG(SPACE)>;
+			bindings = <&kp F9>;
 		};
 
 		/* 
