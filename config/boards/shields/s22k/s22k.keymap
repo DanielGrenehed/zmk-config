@@ -101,9 +101,9 @@
 			// | | MO | BSPC |           | SPACE | MO | |
 			// --------------------------------------------------------
 			bindings = <
-				&lhrm LGUI A &kp W &kp F &kp D					&kp L &kp U &kp Y &rhrm LGUI DOT
-				&none &lhrm RALT R &lhrm LCTRL S &lhrm LSHIFT T 				&rhrm LSHIFT N &rhrm LCTRL E &rhrm RALT I &none  
-				 &none &mo 2 &kp BSPC		&kp SPACE &mo 1 &none
+				&kp A &kp W &kp F &kp D					&kp L &kp U &kp Y &kp DOT
+				&none &kp R &kp S &kp T 				&kp N &kp E &kp I &none  
+				 &td_cmd_ctrl &kp LSHIFT &kp BSPC		&kp SPACE &mo 1 &mo 2
 			>;
 		};
 
@@ -114,8 +114,8 @@
 			// | | MO | BSPC |          | SPACE | MO | |
 			// --------------------------------------------------
 			bindings = <
-				&lhrm LGUI RA(N2) &kp BSLH &kp NON_US_BSLH &kp K 		&kp LBKT &kp APOS &kp SEMI &rhrm LGUI COMMA
-				&none &lhrm RALT X &lhrm LCTRL Q &lhrm LSHIFT V 		&rhrm LSHIFT J &rhrm LCTRL RET &rhrm RALT RA(N7) &none
+				&kp RA(N2) &kp BSLH &kp NON_US_BSLH &kp K 		&kp LBKT &kp APOS &kp SEMI &kp COMMA
+				&none &kp X &kp Q &kp V 		&kp J &kp RET &kp RA(N7) &none
 				     &trans &trans &trans			&trans &trans &trans 
 			>;
 		};
@@ -127,8 +127,8 @@
 			// |  | MO | BSPC |      | SPACE | MO | |
 			// ----------------------------------------------
 			bindings = <
-				&lhrm LGUI GRAVE &td_qt &kp RBKT &kp MINUS	&kp N1 &kp N2 &kp N3 &rhrm LGUI N0
-				&none &lhrm RALT RA(RBKT) &lhrm LCTRL LS(N0) &lhrm LSHIFT FSLH 	&rhrm LSHIFT N7 &rhrm LCTRL N8 &rhrm RALT N9 &none
+				&kp GRAVE &td_qt &kp RBKT &kp MINUS	&kp N1 &kp N2 &kp N3 &kp N0
+				&none &td_squigg &kp LS(N0) &kp FSLH 	&kp N7 &kp N8 &kp N9 &none
 				&trans &trans &trans			&trans &trans &trans
 			>;
 		};
@@ -140,8 +140,8 @@
 			// | | MO | BSPC |                 | SPACE | MO | |
 			// --------------------------------------------------------------
 			bindings = <
-				&sl 4 &kp BSPC &kp UP &kp DEL	&kp F10 &kp F11 &kp F12 &rhrm LGUI F2
-				&none &lhrm RALT LEFT &lhrm LCTRL DOWN &lhrm LSHIFT RIGHT 		&rhrm LSHIFT F5 &rhrm LCTRL ESC &rhrm RALT F1 &none
+				&sl 4 &kp BSPC &kp UP &kp DEL	&kp F10 &kp F11 &kp F12 &kp F2
+				&none &kp LEFT &kp DOWN &kp RIGHT 		&kp F5 &kp ESC &kp F1 &none
 				 &trans &trans &trans			    	&trans &trans &trans
 			>;
 		};
@@ -426,29 +426,17 @@
 			layers = <0>;
 			bindings = <&kp F15>;
 		};
-		combo_home_left {
+		combo_down_left { // left ALT home row 
 			timeout-ms = <60>;
-			key-positions = <1 2 3 9 10 11>;
-			layers = <0>;
-			bindings = <&kp F18>;
+			key-positions = <0 9 10 11 >;
+			layers = <0 1 2 3 4>;
+			bindings = <&kp RALT>;
 		};
-		combo_home_right {
+		combo_down_right { // right ALT home row
 			timeout-ms = <60>;
-			key-positions = <4 5 6 12 13 14>;
-			layers = <0>;
-			bindings = <&kp F19>;
-		};
-		combo_down_left {
-			timeout-ms = <60>;
-			key-positions = <9 10 11>;
-			layers = <0>;
-			bindings = <&kp F16>;
-		};
-		combo_down_right {
-			timeout-ms = <60>;
-			key-positions = <12 13 14>;
-			layers = <0>;
-			bindings = <&kp F17>;
+			key-positions = <12 13 14 7>;
+			layers = <0 1 2 3 4>;
+			bindings = <&kp RALT>;
 		};
 		
     };
