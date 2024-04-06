@@ -92,12 +92,12 @@
 
 		layer_1 {
 			// --------------------------------------------------
-			// | @ | ' | < | K |		| Å | Ä | Ö | , |
+			// | < | ' | < | K |		| Å | Ä | Ö | , |
 			// |   | X | Q | V |		| J | ENTER | | |   |
 			// | ALT | SHIFT | WIN |          | SPACE | MO | MO |
 			// --------------------------------------------------
 			bindings = <
-				&kp LT &kp BSLH &kp NON_US_BSLH &kp K 		&kp LBKT &kp APOS &kp SEMI &kp COMMA
+				&kp GRAVE &kp BSLH &kp NON_US_BSLH &kp K 		&kp LBKT &kp APOS &kp SEMI &kp COMMA
 				&none &kp X &kp Q &kp V 		&kp J &kp RET &kp RA(N7) &none
 				     &trans &trans &trans			&trans &trans &trans 
 			>;
@@ -105,12 +105,12 @@
 
 		layer_2 {
 			// ----------------------------------------------
-			// | § | ´` | ¨ | + |		| 1 | 2 | 3 | 0 |
+			// | | | ´` | ¨ | + |		| 1 | 2 | 3 | 0 |
 			// |   | ~≈ | = | - |		| 7 | 8 | 9 |   |
 			// | ALT | SHIFT | WIN |      | SPACE | MO | MO |
 			// ----------------------------------------------
 			bindings = <
-				&kp GRAVE &td_qt &kp RBKT &kp MINUS	&kp N1 &kp N2 &kp N3 &kp N0
+				&kp pipe &td_qt &kp RBKT &kp MINUS	&kp N1 &kp N2 &kp N3 &kp N0
 				&none &td_squigg &kp LS(N0) &kp FSLH 	&kp N7 &kp N8 &kp N9 &none
 				&trans &trans &trans			&trans &trans &trans
 			>;
