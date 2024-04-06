@@ -97,7 +97,7 @@
 			// | ALT | SHIFT | WIN |          | SPACE | MO | MO |
 			// --------------------------------------------------
 			bindings = <
-				&kp RA(N2) &kp BSLH &kp NON_US_BSLH &kp K 		&kp LBKT &kp APOS &kp SEMI &kp COMMA
+				&kp LT &kp BSLH &kp NON_US_BSLH &kp K 		&kp LBKT &kp APOS &kp SEMI &kp COMMA
 				&none &kp X &kp Q &kp V 		&kp J &kp RET &kp RA(N7) &none
 				     &trans &trans &trans			&trans &trans &trans 
 			>;
