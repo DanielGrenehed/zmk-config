@@ -86,7 +86,7 @@
 			bindings = <
 				&kp A &kp W &kp F &kp D					&kp L &kp U &kp Y &kp DOT
 				&none &kp R &kp S &kp T 				&kp N &kp E &kp I &none  
-				 &kp RALT &kp LSHIFT &td_cmd_ctrl		&kp SPACE &mo 1 &mo 2
+				 &kp RALT &sk LSHIFT &td_cmd_ctrl		&kp SPACE &mo 1 &mo 2
 			>;
 		};
 
