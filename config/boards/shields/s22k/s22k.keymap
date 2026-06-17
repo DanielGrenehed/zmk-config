@@ -29,6 +29,12 @@
 	retro-tap;
 };
 
+&sk {
+  release-after-ms= <500>;
+  quick-release;
+  /delete-property/ ignore-modifiers;
+};
+
 / {
 	macros {
 		bt_pro: set_bt_profile {
