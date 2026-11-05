@@ -1,5 +1,5 @@
 # Copyright (c) 2022 Daniel Grenehed
 # SPDX-License-Identifier: MIT
 
-config BOARD_HS22K
+config SHIELD_HS22K
 	bool "hs22k"
