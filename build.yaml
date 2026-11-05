@@ -14,7 +14,7 @@
 include:
   - board: nice_nano_v2
     shield: s22k_left
-#    snippet: zmk-usb-logging
+    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: s22k_right
 #    snippet: zmk-usb-logging
