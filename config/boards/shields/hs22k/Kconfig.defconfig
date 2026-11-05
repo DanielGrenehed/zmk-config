@@ -4,6 +4,6 @@
 if BOARD_HS22K
 
 config ZMK_KEYBOARD_NAME
-	default "hs22k"
+	default "HS22K"
 
 endif # BOARD_HS22K
